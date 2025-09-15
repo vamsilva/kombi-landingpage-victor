@@ -68,21 +68,18 @@
 O projeto ficará disponível em:
 👉 http://localhost:8000
 
---------------------------------------------
 
-📝 Resumo do Desenvolvimento
-Planejamento inicial
-Front-end: Criação da landing page
-Back-end: Estruturação da área administrativa, com área de gerenciamento do Banner e Faq. Comunicação com o banco de dados
-Ajustes e testes finais, para garantir que a aplicação está funcionando
+## 📝 Resumo do Desenvolvimento
+- Planejamento inicial
+- **Front-end**: Criação da landing page
+- **Back-end**: Estruturação da área administrativa, com área de gerenciamento do Banner e Faq. Comunicação com o banco de dados
+- Ajustes e testes finais, para garantir o correto funcionamento da aplicação
 
---------------------------------------------
 
-⏱️ Tempo Gasto (Aproximado)
-Front-end: 10h
-Back-end: 9h
-Ajustes finais: 4h00
-Total aproximado: 23h
+## ⏱️ Tempo Gasto (Aproximado)  Total: 23h00
+- **Front-end**: 10h
+- **Back-end**: 9h
+- **Ajustes finais**: 4h00
 
 
 
