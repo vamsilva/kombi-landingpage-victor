@@ -1,0 +1,381 @@
+// resources/sass/app.scss
+
+// Importação do Bootstrap
+@use "bootstrap/scss/bootstrap" as *;
+
+// Importação das fontes do Google Fonts:
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap');
+
+// Seus estilos customizados
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+//Barra de navegação
+.text-nossos_servicos{
+top: 42px;
+left: 1069px;
+width: 123px;
+height: 24px;
+
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-m-plus-1);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 16px/24px M PLUS 1;
+letter-spacing: 0px;
+color: #0A524A;
+opacity: 1;
+}
+
+.text-sobre_nos{
+top: 42px;
+left: 1229px;
+width: 77px;
+height: 24px;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-m-plus-1);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 16px/24px M PLUS 1;
+letter-spacing: 0px;
+color: #0A524A;
+opacity: 1;
+}
+
+.btn-solicitar {
+top: 26px;
+left: 1343px;
+width: 265px;
+height: 56px;
+
+background: transparent linear-gradient(270deg, var(--unnamed-color-106b60) 0%, #A2C648 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(270deg, #106B60 0%, #A2C648 100%) 0% 0% no-repeat padding-box;
+border-radius: 28px;
+opacity: 1;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+color: #fff;
+background-color: #106B60;
+}
+
+.btn-solicitar2 {
+//Botão centralizado
+  background: linear-gradient(270deg, #106B60 0%, #A2C648 100%);
+  border-radius: 28px;
+  padding: 12px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-solicitar2:hover {
+  opacity: 0.9;
+}
+
+//----------------------------------------------
+
+//Carrocel de Banners
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: transparent;
+  border: 2px solid #106B60;
+  width: 35px;
+  height: 8px;
+  border-radius: 50px;
+  margin: 0 4px;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #106B60;
+  border: none;
+  width: 55px;
+}
+
+.titulo-servico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #106B60;
+  font-weight: bold;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #C69C6D;
+    margin: 0 1rem;
+  }
+}
+
+//----------------------------------------------
+
+// Seção de Serviços
+@mixin corner-radius($top-left:0, $top-right:0, $bottom-right:0, $bottom-left:0 ) {
+  border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+.background{
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #D4DCC0 47%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+
+.card-servico {
+//Formato base
+  width: 416px; height: 180px;
+  background: #fff;
+  border: 1px solid #D4DCC0;
+  border-top-right-radius: 240px;
+  @include corner-radius(0 100px 0 0);
+}
+
+.card-img-top-wrapper {
+  position: relative;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #C69C6D;
+}
+
+.icon-wrapper {
+  margin: -20px 0 12px 16px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border: 2px solid #C69C6D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.icon-wrapper img {
+  width: 28px;
+  height: 28px;
+}
+
+
+//----------------------------------------------
+
+
+//Banner de Receita
+.banner-receita img {
+  max-height: 576px;   /* altura conforme mockup */
+  object-fit: cover;   /* cobre toda a largura sem deformar */
+}
+
+
+//----------------------------------------------
+
+//Seção "Sobre Nós"
+.titulo-section {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #106B60;
+  margin-bottom: 20px;
+}
+
+.titulo-section span {
+  font-weight: 700;
+  color: #0f503f;
+}
+
+.texto-descricao {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.imagens-certificacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-farmaceutico {
+  max-width: 500px;
+  position: relative;
+  float: right;
+
+}
+
+.fundo-verde {
+  background: linear-gradient(121deg, #027E68 0%, #D4DCC0 100%);
+  min-height: 100%;
+}
+
+
+//----------------------------------------------
+
+//Seção de Dúvidas (FAQ)
+/* Remove a seta padrão do Bootstrap */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Botão customizado (título da dúvida) */
+.accordion-button {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #106B60;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+/* Quando aberto */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: #106B60;
+  box-shadow: none !important;
+}
+
+.icon-toggle img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-minus {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .icon-plus {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .icon-minus {
+  display: inline;
+}
+
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #C69C6D;
+  background-color: transparent;
+}
+
+/* Corpo (resposta) */
+.accordion-body {
+  color: #444;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Título acima da FAQ */
+.h3 {
+  color: #C69C6D;
+  font-size: 1.8rem;
+}
+
+/* Deixando mais responsivo */
+@media (max-width: 575.98px) {
+  .icon-toggle img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+//----------------------------------------------
+
+//Formuláriod e Contatos
+.contact-section {
+  min-height: 806px;
+}
+
+.contact-image img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.contact-form {
+  background: linear-gradient(128deg, #027E68 0%, #D4DCC0 100%);
+  color: #fff;
+}
+
+.contact-form .form-control {
+  border: none;
+  padding: 12px 16px;
+}
+
+.btn-submit {
+  background: linear-gradient(270deg, #A2C648 0%, #106B60 100%);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
+
+
+//----------------------------------------------
+
+
+//Footer(Rodapé)
+.footer {
+  background: linear-gradient(180deg, #ffffff 0%, #E8EEDC 100%);
+  color: #0f3d2e;
+  font-size: 14px;
+}
+
+.footer-logo {
+  max-height: 50px;
+  margin-left: 8px;
+}
+
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  border: 1px solid #0f3d2e;
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+.footer-social img:hover {
+  background: #0f3d2e;
+  filter: brightness(0) invert(1);
+}
+
+.footer hr {
+  border-top: 1px solid #cfcfcf;
+  opacity: 0.7;
+}
+
+.footer a {
+  color: #0f3d2e;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
